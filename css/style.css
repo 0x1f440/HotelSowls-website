@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url('../img/bgr_daytime.png');
+  font-family: 'Nanum Gothic', sans-serif;
+  line-height: 1.8rem;
+
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-top: 8rem;
+  color: #6137d3;
+}
+
+.caption {
+  color: #340f99;
+  margin-bottom: 50px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+
+  position: absolute;
+  top : 0;
+  left: calc(50% - 200px);
+
+  width: 400px;
+}
+
+a{
+  text-decoration: none;
+  color: #6137d3;
+  font-weight: bold;
+  border-bottom: 1px solid #6137d3;
+}
+
+b {
+  color: #333;
+}
+
+.contents {
+  margin: 50px 0;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.example {
+  text-align: left;
+
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 70px;
+  margin: 35px;
+
+
+  line-height: 2rem;
+}
+
+.container {
+  display: block;
+  margin: 100px auto;
+  padding: 100px 120px 0 120px;
+  width: 1000px;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  text-align: center;
+}
+
+.img-wrapper {
+  display: block;
+  width: 720px;
+  margin: auto;
+}
+
+.imgs {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sketch {
+  display: block;
+  width: 300px;
+  margin: auto;
+  vertical-align: top;
+}
+
+footer {
+  padding: 100px 0 50px 0;
+}
