@@ -1,0 +1,28 @@
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  padding: 0 10px 10px 0;
+  width: 33%;
+}
+.my-gallery figcaption {
+  display: none;
+}
+
+.pswp__caption__center {
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .my-gallery figure {
+    width: 50%;
+  }
+}

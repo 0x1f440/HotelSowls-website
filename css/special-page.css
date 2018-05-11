@@ -12,17 +12,6 @@ h1, h2, h3, h4, h5 {
   line-height: 1.7rem;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto;
-
-  position: absolute;
-  top : 0;
-  left: calc(50% - 200px);
-
-  width: 400px;
-}
-
 a{
   text-decoration: none;
   color: #6137d3;
@@ -45,19 +34,13 @@ b {
 
   border: 1px solid #aaa;
   border-radius: 20px;
-  padding: 70px;
-  margin: 35px;
-
+  padding: 13%;
+  margin: 5%;
 
   line-height: 2rem;
 }
 
 .container {
-  display: block;
-  margin: 100px auto;
-  padding: 100px 120px 0 120px;
-  width: 1000px;
-
   background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
 }
@@ -75,7 +58,7 @@ b {
 
 .sketch {
   display: block;
-  width: 300px;
+  max-width: 300px;
   margin: auto;
   vertical-align: top;
 }
@@ -84,15 +67,7 @@ footer {
   padding: 100px 0 50px 0;
 }
 
-@media (max-width : 1024px) {
-  .container{
-    width: 96%;
-    margin: 100px 2%;
-    padding: 100px 10% 0 10%;
-  }
 
-  .logo {
-    left: calc(50% - 180px);
-    width: 360px;
-  }
+@media only screen and (max-width: 600px) {
+
 }

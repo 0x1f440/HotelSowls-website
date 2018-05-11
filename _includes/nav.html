@@ -1,0 +1,8 @@
+<nav>
+  <ul>
+   <a href="{{ site.url }}/story"><li {% if page.group == 'story' %}class="active"{% endif %} >STORY</li></a>
+   <a href="{{ site.url }}/gallery"><li {% if page.group == 'gallery' %}class="active"{% endif %} >GALLERY</li></a>
+   <a href="{{ site.url }}/about"><li class="right-item {% if page.group == 'about' %}active{% endif %}">ABOUT</li></a>
+   <a href="{{ site.url }}/blog"><li class="right-item {% if page.group == 'blog' %}active{% endif %}">BLOG</li></a>
+ </ul>
+</nav>

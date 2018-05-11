@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -17,6 +19,11 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	line-height: 1.8rem;
+	box-sizing: border-box;
+}
+img {
+  width: 100%;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -24,11 +31,12 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html {
-	font-family: 'Nanum Gothic', sans-serif;
+	font-family: 'Noto Sans KR', sans-serif;
   line-height: 1.8rem;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
+	list-style-type: none;
 }
 blockquote, q {
 	quotes: none;
@@ -49,9 +57,10 @@ div {
 
 h1 {
     display: block;
-    font-size: 2em;
-    margin-top: 0.67em;
-    margin-bottom: 0.67em;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.67rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -59,9 +68,9 @@ h1 {
 
 h2 {
     display: block;
-    font-size: 1.5em;
-    margin-top: 0.83em;
-    margin-bottom: 0.83em;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.83rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -69,9 +78,9 @@ h2 {
 
 h3 {
     display: block;
-    font-size: 1.17em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -79,9 +88,9 @@ h3 {
 
 h4 {
     display: block;
-    font-size: 1em;
-    margin-top: 1.33em;
-    margin-bottom: 1.33em;
+    font-size: 1rem;
+    margin-top: 1.33rem;
+    margin-bottom: 1.33rem;
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
@@ -93,4 +102,8 @@ article {
 
 b {
   font-weight: bold;
+}
+
+a {
+   text-decoration: none;
 }
