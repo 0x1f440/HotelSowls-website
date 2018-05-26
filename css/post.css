@@ -18,7 +18,15 @@
 }
 
 .post-content p {
-  margin-bottom: 60px;
+  margin-top: 30px;
+}
+
+.post-content h2 {
+  margin-top: 80px;
+}
+
+.post-content h2:first-child {
+  margin-top: 0;
 }
 
 .post-content a{
