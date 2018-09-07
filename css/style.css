@@ -134,6 +134,10 @@ a:hover {
   font-size: 1.2rem;
 }
 
+.homepage {
+  font-weight: bold;
+}
+
 body {
     -webkit-animation-delay: 0.1s;
     -webkit-animation-name: fontfix;
