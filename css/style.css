@@ -6,8 +6,8 @@ html {
 }
 
 body {
+  line-height: 1.9rem;
   height: 100%;
-  word-break: keep-all;
 }
 
 h1 {
