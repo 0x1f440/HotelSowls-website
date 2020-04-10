@@ -25,7 +25,9 @@ permalink: /:categories/:title
 markdown: kramdown
 plugins:
   - jekyll-feed
-
+  - jekyll-multiple-languages-plugin
+languages: ["en", "ko", "ja"]
+exclude_from_localizations: ["js", "img", "css"]
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

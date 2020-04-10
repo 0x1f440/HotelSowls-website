@@ -1,0 +1,85 @@
+<div class="col-60 m-col-100">
+  <div class="videoWrapper">
+    <iframe src="https://www.youtube.com/embed/Kxo_DQ2rC0g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="col-40 m-col-100">
+  {% for post in site.posts limit:3 %}
+  <li class="post-list">
+    <a class="post-list-wrapper" href="{{ post.url }}">
+      <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <div class="post-list-title">{{ post.title }}</div>
+      </a>
+    </li>
+  {% endfor %}
+</div>
+
+<div class="col-100">
+<a href="{{ site.url }}/story"><h1>HOTEL SOWLS</h1></a>
+<img class="separator" src='/img/separator.png' alt="separator">
+
+あなたは薬学者です。新しい研究のために100年以上前の新聞を見て、神秘的な「石」がソウルズ地方で発見されたという記事を見つけます。その「石」は、輝きとともに、かすかな音がして語りかけてくるような感じがします。貴重な薬学材料だということは明らかです。あなたはその日から、あらゆる所をめぐって「石」を探します。
+<br><br>
+つらい旅程の末、「石」を手に入れることに成功したあなたは、画期的な研究で有名になることを期待して、近くのホテルで休んでいくことにします。しかし翌朝、あなたの大切な「石」が消えてしまいます……
+<br><br>
+ホテルの誰が、何の目的でその「石」を持っていったのでしょうか。はたして、あなたはホテルの秘密を解き、無事に「石」を探し、研究を進めることができるのでしょうか。もしそうでなければ……？　
+
+さまざまな結末があなたを待っています。
+</div>
+
+<div class="col-100">
+  <a href="{{ site.url }}/gallery"><h1>GALLERY</h1></a>
+  <img class="separator" src='/img/separator.png' alt="separator">
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (1).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (1).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">
+        古い新聞で見つけた神秘的な石！　この石さえ手に入れればノーバル賞も時間の問題だろう。</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (3).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (3).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">
+        ニワトリを池に落としちゃいけません。
+      </figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (4).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (4).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">
+        メスは肉を切るのにちょうどいいぞ！
+      </figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (5).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (5).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">
+        値引き交渉、失敗。
+      </figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (2).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (2).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">なぜバーテンダーが占いを？</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (6).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (6).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">おいしそうなサケがプールに……？</figcaption>
+    </figure>
+  </div>
+</div>
+
+{% include gallary.html %}

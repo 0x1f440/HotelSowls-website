@@ -1,0 +1,77 @@
+<div class="col-60 m-col-100">
+  <div class="videoWrapper">
+    <iframe src="https://www.youtube.com/embed/Kxo_DQ2rC0g" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+<div class="col-40 m-col-100">
+  {% for post in site.posts limit:3 %}
+  <li class="post-list">
+    <a class="post-list-wrapper" href="{{ post.url }}">
+      <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <div class="post-list-title">{{ post.title }}</div>
+      </a>
+    </li>
+  {% endfor %}
+</div>
+
+<div class="col-100">
+<a href="{{ site.url }}/story"><h1>HOTEL SOWLS</h1></a>
+<img class="separator" src='/img/separator.png' alt="separator">
+Hotel Sowls is a mysterious adventure game with unique and appealing 2D graphics.
+<br><br>
+As an pharmacologist, you managed to get a valuable and 
+mysterious stone after a hard journey and you decided to take a break at the Hotel Sowls.
+But the next morning, someone in the hotel stole the stone!
+Can you find a stone in this strange and mysterious hotel and find out the secret of the hotel?
+
+</div>
+
+<div class="col-100">
+  <a href="{{ site.url }}/gallery"><h1>GALLERY</h1></a>
+  <img class="separator" src='/img/separator.png' alt="separator">
+  <div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (1).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (1).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">낡은 신문에서 발견한 신비한 돌! 이 돌만 얻는다면 노발상도 시간 문제일 것 같습니다.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (3).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (3).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">닭들을 호수에 빠트리면 안 돼요.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (4).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (4).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">메스는 고기를 자르기 좋은 도구입니다.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (5).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (5).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">흥정 실패.</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (2).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (2).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">왜 바텐더가 점을 보는거야?</figcaption>
+    </figure>
+
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+      <a href="\img\screenshot\image (6).jpg" itemprop="contentUrl" data-size="620x349">
+          <img src="\img\screenshot\image (6).jpg" itemprop="thumbnail">
+      </a>
+      <figcaption itemprop="caption description">맛 좋은 연어가 물에 들어가 있어요.</figcaption>
+    </figure>
+  </div>
+</div>
+
+{% include gallary.html %}

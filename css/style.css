@@ -1,5 +1,6 @@
 html {
   background-color: black;
+  font-family: "Lekton", "Noto Sans KR", sans-serif;
   color: #eee;
   width: 100%;
   height: 100%;
@@ -14,6 +15,20 @@ h1 {
   font-family: 'Oswald', sans-serif;
   letter-spacing: 0.4rem;
   text-align: center;
+}
+
+.language-selector {
+  position: absolute;
+  top : 7px;
+  right : 14px;
+}
+
+.language-selector img{
+  width: 25px;
+}
+
+.language-selector a {
+  margin: 0 7px;
 }
 
 .post-content ul {
