@@ -1,3 +1,6 @@
+require "tmpdir"
+require "jekyll"
+
 # Auto publish
 # Change your GitHub reponame
 GITHUB_REPONAME = "0x1f440/HotelSowls-website"
