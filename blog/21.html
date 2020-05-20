@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118968596-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-118968596-1');
+</script>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>개발노트 #21 :: 게임 내 이벤트 수정 :: Hotel Sowls</title>
+<meta name="description" content="Hotel Sowls">
+<meta name="author" content="Studio Sott">
+<link rel="icon" href="/img/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Lekton:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/css/reset.css">
+<link rel="stylesheet" href="/css/grid.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/responsive.css">
+<script type="text/javascript" src="/js/script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<meta property="og:url" content="http://hotelsowls.com"></meta>
+<meta property="og:title" content="개발노트 #21 :: 게임 내 이벤트 수정 :: Hotel Sowls"></meta>
+<meta property="og:description" content="Hotel Sowls Official Site"></meta>
+<meta property="og:image" content="http://hotelsowls.com/img/screenshot/cover.jpg"></meta>
+<meta property="og:image:width" content="620"></meta>
+<meta property="og:image:height" content="465"></meta>
+<meta name="twitter:card" content="summary">
+<meta name="twitter:url" content="http://hotelsowls.com"></meta>
+<meta name="twitter:title" content="개발노트 #21 :: 게임 내 이벤트 수정 :: Hotel Sowls"></meta>
+<meta name="description" content="Hotel Sowls Official Site"></meta>
+<meta name="twitter:image" content="http://hotelsowls.com/img/screenshot/cover.jpg"></meta>
+
+    <link rel="stylesheet" href="/css/post.css">
+    <script type="text/javascript" src="/js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="bg"></div>
+    <div class="container">
+       <a href= "http://hotelsowls.com"><img class="logo" src="http://hotelsowls.com/img/logo_white.png"></a>
+       <div class="language-selector">
+  <a href="/blog/21"><img src="/img/en.jpg"></a>
+  <a href="/ko/blog/21"><img src="/img/ko.jpg"></a>
+  <a href="/ja/blog/21"><img src="/img/ja.png"></a>
+</div>
+
+<nav>
+  <ul>
+   <a href="http://hotelsowls.com/story"><li  >STORY</li></a>
+   <a href="http://hotelsowls.com/gallery"><li  >GALLERY</li></a>
+   <a href="http://hotelsowls.com/about"><li class="right-item ">ABOUT</li></a>
+   <a href="http://hotelsowls.com/blog"><li class="right-item active">BLOG</li></a>
+ </ul>
+ 
+</nav>
+
+       <div class="page-wrapper">
+         <div class="post-title">개발노트 #21 :: 게임 내 이벤트 수정</div>
+          <span class="post-date">2018-10-15
+            <span class="post-author">눈눈</span>
+          </span>
+
+          <div class="post-content"><h2 id="안녕하세요-스물-한-번째-개발노트입니다">안녕하세요! 스물 한 번째 개발노트입니다.</h2>
+
+<p>안녕하세요! 스물 한 번째 개발노트입니다. 벌써 10월 중순이네요. 시간이 정말 빨라요.
+저희는 졸업 전시 기획 준비 때문에 바쁜 하루하루를 보내고 있어요.
+전시 일정이 나오면 공지 드릴게요. 후원자님들도 보러 와 주시면 기쁠 것 같아요.</p>
+
+<h2 id="게임-내-기계의-작동-방식과-디자인-수정">게임 내 ‘기계’의 작동 방식과 디자인 수정</h2>
+<p>게임 내 아이템을 가공할 수 있는 ‘기계’의 작동 방식을 완전히 바꿨습니다.
+기존의 방식은 인벤토리 UI를 그대로 사용하는 방식이었는데,
+전용 UI의 필요성을 느끼기도 했고 플레이 난이도를 조정하기 위해 기계에 사용 가능한 아이템만 선택 가능하도록 수정하였습니다.</p>
+
+<h2 id="편해진-배경음악-관리">편해진 배경음악 관리</h2>
+<p>원래는 배경음악이 바뀔 때마다 코드 내에서 일일이 배경음악의 제목을 적어서 교체하였으나,
+진행상황과 밤/낮에 따라 나오는 기본 배경음악이 다르기 때문에 배경음악이 다른 맵을 다녀온 뒤 맞는 배경음악을 재생하기 어려웠습니다.
+하지만 지금은 배경음악 매니저가 기본으로 상황에 맞는 배경음악을 재생하도록 바뀌었습니다.</p>
+
+<h2 id="게임-내-이벤트-수정">게임 내 이벤트 수정</h2>
+<p>스포일러 가능성이 있어 자세한 말씀은 못 드리지만… 특정 이벤트 하에서 캐릭터의 이동 속도와 이동 범위, 대사 등을 수정했습니다.
+메인 스토리를 구현하다보니 이러한 스포일러성 업데이트가 그 동안 굉장히 많았는데, 오늘은 은근슬쩍 말해봤어요.</p>
+
+<h2 id="잡다한-버그-수정">잡다한 버그 수정</h2>
+<p>스프라이트의 순서가 종종 뒤바뀌는 경우가 있는데, 발견한 여러 곳을 수정하였습니다.</p>
+
+<div style="width:266px; height:297px; margin:auto; margin-top:80px;">
+  <img src="\img\post\2018-10\something_weird.png" />
+  <div>
+</div></div>
+</div>
+
+          <div>
+            
+            <div class="post-navi previous-post">
+              <a href="/blog/20"><i class="fas fa-angle-left"></i> 개발노트 #20 :: 인벤토리 구현 수정</a>
+            </div>
+            
+            
+            <div class="post-navi next-post">
+              <a href="/blog/22">개발노트 #22 :: 스팀웍스 파트너 등록 <i class="fas fa-angle-right"></i></a>
+            </div>
+            
+        </div>
+        <div class="under-space"></div>
+      </div>
+    </div>
+    <footer>
+      Copyright © 2018 Studio Sott
+    </footer>
+    <div id="character"></div>
+  </body>
+</html>

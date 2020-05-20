@@ -1,0 +1,40 @@
+[class*="col"] {
+  float: left;
+  padding: 20px 20px 40px 20px;
+  min-height: 1px;
+}
+
+.col-30 {
+  width: 30%;
+}
+
+.col-33 {
+  width: 33%;
+}
+
+.col-40 {
+  width: 40%;
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.col-70 {
+  width: 70%;
+}
+
+.col-100 {
+  width: 100%;
+}
+
+.under-space {
+  clear: both;
+  height: 0px;
+}
+
+@media (max-width : 1000px) {
+  .m-col-100 {
+    width: 100%;
+  }
+}

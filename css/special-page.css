@@ -1,0 +1,76 @@
+html {
+  background-image: url('/img/bgr_daytime.png');
+}
+
+h1, h2, h3, h4, h5 {
+  color: #6137d3;
+}
+
+.caption {
+  color: #340f99;
+  margin-bottom: 50px;
+  line-height: 1.7rem;
+}
+
+a{
+  text-decoration: none;
+  color: #6137d3;
+  font-weight: bold;
+  border-bottom: 1px solid #6137d3;
+}
+
+b {
+  color: #333;
+}
+
+.contents {
+  margin: 50px 0;
+  text-align: left;
+  line-height: 2rem;
+}
+
+.example {
+  text-align: left;
+
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  padding: 13%;
+  margin: 5%;
+
+  line-height: 2rem;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+  text-align: center;
+}
+
+.img-wrapper {
+  display: block;
+  max-width: 720px;
+  margin: auto;
+}
+
+.imgs {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sketch {
+  display: block;
+  max-width: 300px;
+  margin: auto;
+  vertical-align: top;
+}
+
+footer {
+  padding: 100px 0 50px 0;
+}
+
+article {
+  margin-top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+}

@@ -1,0 +1,48 @@
+
+@media (max-width : 1024px) {
+  .container{
+    width: 94%;
+    margin: 100px 3%;
+    padding: 110px 5%;
+  }
+
+  .logo {
+    left: calc(50% - 170px);
+    width: 340px;
+  }
+
+  nav {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+
+  nav ul {
+    display: block;
+    text-align: center;
+  }
+
+  nav .right-item {
+    float: none;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    top: 30px;
+    left: calc(50% - 120px);
+    width: 240px;
+  }
+
+  [class*="col"] {
+    padding: 20px 5px 40px 5px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   nav li {
+     width: 48%;
+   }
+}
