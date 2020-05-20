@@ -6,7 +6,7 @@
 <div class="col-40 m-col-100">
   {% for post in site.posts limit:3 %}
   <li class="post-list">
-    <a class="post-list-wrapper" href="{{ post.url }}">
+    <a class="post-list-wrapper" href="/ko/{{ post.url }}">
       <span class="post-list-date">{{ post.date | date: "%Y-%m-%d" }}</span>
       <div class="post-list-title">{{ post.title }}</div>
       </a>

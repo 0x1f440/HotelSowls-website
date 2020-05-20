@@ -6,7 +6,7 @@ group: blog
 
 <ul class="blog-list">
    {% for post in site.posts %}
-   <a class="blog-item-list" href="{{ post.url }}">
+   <a class="blog-item-list" href="{{ site.baseurl }}{{ post.url }}">
      <li>
          <span class="blog-item-date">{{ post.date | date: "%d %b %Y" }}</span>
          <div class="blog-item-title">{{ post.title }}</div>
